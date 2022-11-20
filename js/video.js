@@ -28,7 +28,6 @@ slower.addEventListener("click", function () {
     if (video.playbackRate == 1) video.playbackRate = 0.5;
     else if (video.playbackRate == 2) video.playbackRate = 1;
     else window.alert("Video is at slowest speed!");
-    video.playback
 });
 faster.addEventListener("click", function () {
     if (video.playbackRate == 1) video.playbackRate = 2;
