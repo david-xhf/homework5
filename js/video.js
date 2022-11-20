@@ -10,13 +10,13 @@ const vol = document.getElementById("volume");
 const volSlider = document.getElementById("slider");
 volSlider.addEventListener('change', () => {
     video.volume = volSlider.valueAsNumber / 100;
-    vol.textContent = volSlider.valueAsNumber;
+    vol.textContent = `${volSlider.value}%`;
 });
 window.addEventListener('load', function () {
     video.load();
     video.autoplay = false;
     video.loop = false;
-    vol.textContent = video.volume * 100;
+    vol.textContent = `${video.volume * 100}%`;
 });
 play.addEventListener("click", () => video.play());
 pause.addEventListener("click", () => video.pause());
