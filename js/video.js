@@ -16,7 +16,6 @@ window.addEventListener('load', function () {
     video.load();
     video.autoplay = false;
     video.loop = false;
-    video.controls = true;
     vol.textContent = video.volume * 100;
 });
 play.addEventListener("click", () => video.play());
